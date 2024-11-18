@@ -1,0 +1,146 @@
+body{
+    background-color: rgb(123, 132, 141);
+}
+i{
+    color: rgb(70, 70, 70);
+    cursor: pointer;
+}
+.inbox{
+    background-color: whitesmoke;
+    display: grid;
+    width: 500px;
+    height: 1000px;
+    grid-template-columns: 100px 1fr;
+    border-radius: 20px;
+    margin: auto;
+    overflow: hidden;
+}
+.side-bar{
+    padding-top: 50px;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    gap: 100px;
+    background-color: white;
+}
+.side-bar,
+.top-side,
+.bottom-side{
+    align-content: start;
+    justify-content: center;
+    justify-items: center;
+}
+.side-bar .icon{
+    transition: color 0.2s ease;
+}
+.side-bar .icon:hover{
+    color: rgb(77, 148, 255);
+}
+.top-side{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    gap: 100px;
+    padding-bottom: 70px;
+    border-bottom: 2px solid black;
+}
+.top-side > div{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(77, 148, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-side > div i{
+    color: white;
+}
+.bottom-side{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    gap: 100px;
+}
+
+.top-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    align-content: center;
+    justify-items: end;
+    padding: 30px 20px 0 10px;
+}
+.top-list h1{
+    justify-self: start;
+    font-size: 2.2rem;
+}
+.top-list i:hover{
+    color: rgb(77, 148, 255);
+}
+.top-list i:active{
+    color: rgb(190, 190, 190);
+}
+.center-list{
+    display: grid;
+    grid-template-rows: repeat(8, auto);
+}
+#first > div{
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#first img{
+    height: 100%;
+}
+
+.convers{
+    padding-inline: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    align-content: center;
+    justify-items: start;
+    gap: 10px;
+    cursor: pointer;
+}
+.convers h5{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.convers:hover h5, .convers:hover i{
+    color:rgb(77, 148, 255);
+}
+#text-center{
+    padding-left: 20px;
+    color: rgb(70, 70, 70);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.bottom-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    align-content: center;
+    justify-items: end;
+
+    padding-inline: 20px;
+    cursor: pointer;
+}
+.bottom-list h4{
+    justify-self: start;
+    color: rgb(77, 148, 255);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.bottom-list i{
+    color: rgb(77, 148, 255);
+}
+.bottom-list:hover h4, .bottom-list:hover i{
+    color: rgb(122, 122, 122);
+}
+.bottom-list:active h4, .bottom-list:active i{
+    color: rgb(209, 209, 209);
+}

@@ -1,0 +1,152 @@
+body{
+    background-color: rgb(157, 172, 179);
+}
+.post{
+    display: grid;
+    grid-template-rows: 100px auto auto;
+    gap: 10px;
+    width: 700PX;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    padding-top: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.post i,
+.post h5{
+    color: grey;
+}
+.information{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    padding-inline: 30px;
+}
+.post-info{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+    align-items: center;
+    align-content: center;
+}
+
+.profile-image{
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    align-self: center;
+}
+.profile-image img,
+.user-profile img{
+    width: 100%;
+}
+.user-name{
+    align-self: end;
+}
+.user-name h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+}
+.user-name span{
+    color: grey;
+}
+.time-post{
+    align-self: start;
+}
+.time-post p{
+    font-size: 1rem;
+    color: grey;
+    margin: 0;
+}
+.image{
+    justify-self: center;
+    width: 95%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("./image/videoThumbnail.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image img{
+    width: 100%;
+    border-radius: 10px;
+}
+.play-btn{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.774);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.play-btn i{
+    color: white;
+}
+
+.top{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-inline: 30px;
+}
+.share{
+    grid-column: 3 / -1;
+    justify-self: end;
+}
+.top div{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-content: center;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+#left-top{
+    gap: 50px;
+}
+.bottom{
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(243, 243, 243);
+    padding: 10px 30px;
+}
+.user-profile{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    align-self: center;
+}
+.bottom-right{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 15px;
+}
+.bottom-left{
+    position: relative;
+}
+.status{
+    background-color: rgb(0, 184, 0);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 3px solid rgb(224, 224, 224);
+    position: absolute;
+    top: 35px;
+    right: 0;
+}
+.bottom-mid > h3{
+    color: rgb(160, 160, 160);
+    font-weight: 400;
+}
